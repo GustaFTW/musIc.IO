@@ -1,9 +1,13 @@
-import { Header } from "./templates/header";
+import { Music} from "./components/audio";
+import { Header } from "./components/header";
 
 export default function App() {
 
   return (
-    <Header />
+    <div>
+      <Header />
+      <Music />
+    </div>
     )
 }
 
