@@ -1,41 +1,41 @@
-export function Keyboard() { //grid grid-cols-5 grid-rows-8 mt-24 ml-auto mr-auto place-items-center max-w-md
+export function Keyboard() {
     return (
-        <div className="grid grid-cols-5 grid-rows-8 mt-24 ml-auto mr-auto place-items-center max-w-md bg-purple-400 border border-purple-400 rounded">
+        <div className="grid grid-cols-5 grid-rows-8 mt-24 ml-auto mr-auto place-items-center max-w-md rounded">
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">C</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-9 pr-10">C</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">C#</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-8 pr-10">C#</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">D</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-8 pr-10">D</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">D#</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-8 pr-10">D#</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">E</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-8 pr-[43px]">E</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">F</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-10 pr-10">F</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">F#</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-8 pr-10">F#</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">G</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-8 pr-10">G</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">G#</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-8 pr-10">G#</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">A</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-8 pr-10">A</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">A#</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-6 pr-9">A#</button>
             </div>
             <div>
-                <button className="text-4xl rounded font-bold hover:bg-purple-800 transition-colors">B</button>
+                <button className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-200 transition-colors pl-8 pr-10">B</button>
             </div>
         </div>
     )

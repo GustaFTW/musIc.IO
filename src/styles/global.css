@@ -4,5 +4,8 @@
 
 body {
     @apply bg-purple-300 text-black;
-    -webkit-font-smoothing: antialiesed
+    -webkit-font-smoothing: antialiesed;
+    background-image: url("./src/images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

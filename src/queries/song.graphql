@@ -1,0 +1,6 @@
+query MyQuery {
+  musics {
+    id
+    song
+  }
+}
