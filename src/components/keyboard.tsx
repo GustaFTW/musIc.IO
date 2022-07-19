@@ -1,15 +1,22 @@
-export let right = false
+import { useState } from "react";
+
 export function Keyboard() { 
-    console.log(right)
     let songKey = "C"
+    const [correctAnswer, setCorrectAnswer] = useState(false);
+    const [guesses, setGuesses] = useState(0);
+
     const handleClick = (buttonKey: string) => {
+        setGuesses(guesses + 1)
         if (buttonKey === songKey) {
-            return true
-        } else return false
+            setCorrectAnswer(true)
+        } else setCorrectAnswer(false);
     }
-    
-    return (
-        <div className="grid grid-cols-5 grid-rows-8 mt-24 ml-auto mr-auto place-items-center max-w-md rounded">
+
+    if (correctAnswer == false) {
+        return (
+        <div>
+            <div className="font-bold text-2xl text-center mt-2 mb-2">Quantidade de chutes (máximo 3): {guesses}</div>
+            <div className="grid grid-cols-5 grid-rows-8 mt-12 ml-auto mr-auto place-items-center max-w-md rounded">
             <div>
                 <button onClick={() => {handleClick('C')}} className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-100 transition-colors pl-9 pr-10">C</button>
             </div>
@@ -46,7 +53,12 @@ export function Keyboard() {
             <div>
                 <button onClick={() => {handleClick('B')}} className="text-4xl rounded font-bold hover:bg-purple-600 bg-purple-100 transition-colors pl-8 pr-10">B</button>
             </div>            
-        </div>        
-    )
-}
+            </div>
+        </div>)
+    } else if (guesses <= 3) {
+        return (<div className="font-bold text-2xl mt-2 text-center">Resposta correta, chutes: {guesses}</div>)
+    } else {
+        return (<div className="font-bold text-2xl mt-2 text-center">Perdeu ruim, chutes: {guesses}</div>)
+    }
 
+}
