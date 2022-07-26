@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { songs } from "../songs";
 
-export function Keyboard() { 
+export function Keyboard() {
     let songKey = "C"
     const [correctAnswer, setCorrectAnswer] = useState(false);
     const [guesses, setGuesses] = useState(0);
@@ -12,7 +13,7 @@ export function Keyboard() {
         } else setCorrectAnswer(false);
     }
 
-    if (correctAnswer == false) {
+    if (correctAnswer == false && guesses < 3) {
         return (
         <div>
             <div className="font-bold text-2xl text-center mt-2 mb-2">Quantidade de chutes (máximo 3): {guesses}</div>
@@ -55,7 +56,7 @@ export function Keyboard() {
             </div>            
             </div>
         </div>)
-    } else if (guesses <= 3) {
+    } else if (correctAnswer == true) {
         return (<div className="font-bold text-2xl mt-2 text-center">Resposta correta, chutes: {guesses}</div>)
     } else {
         return (<div className="font-bold text-2xl mt-2 text-center">Perdeu ruim, chutes: {guesses}</div>)
